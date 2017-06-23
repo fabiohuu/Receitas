@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Receita:"
+        android:text="@string/titulolista"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Ingredientes:"
+        android:text="@string/itens"
         android:id="@+id/textView2"
         android:layout_marginTop="16dp"
         android:layout_below="@+id/editText"
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Modo de preparo:"
+        android:text="@string/valorcompra"
         android:id="@+id/textView3"
         android:layout_marginTop="16dp"
         android:layout_below="@+id/editText2"
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Quantidade de pessoas:"
+        android:text="@string/obs"
         android:id="@+id/textView4"
         android:layout_marginTop="16dp"
         android:layout_below="@+id/editText3"
@@ -89,30 +89,11 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView4" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Tempo de Preparo:"
-        android:id="@+id/textView5"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/editText4"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView5" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastrar"
+        android:text="@string/cadlista"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"

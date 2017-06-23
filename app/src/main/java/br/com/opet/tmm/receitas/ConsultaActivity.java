@@ -20,7 +20,7 @@ public class ConsultaActivity extends Activity {
         BancoController crud = new BancoController(getBaseContext());
         final Cursor cursor = crud.carregaDados();
 
-        String[] nomeCampos = new String[] {CriaBanco.ID, CriaBanco.RECEITAS};
+        String[] nomeCampos = new String[] {CriaBanco.ID, CriaBanco.TITULOLISTA};
         int[] idViews = new int[] {R.id.idLivro, R.id.nomeLivro};
 
         SimpleCursorAdapter adaptador = new SimpleCursorAdapter(getBaseContext(),

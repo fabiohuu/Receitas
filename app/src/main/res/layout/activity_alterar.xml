@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Receita:"
+        android:text="@string/titulolista"
         android:id="@+id/textView4"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Ingredientes:"
+        android:text="@string/itens"
         android:id="@+id/textView5"
         android:layout_marginTop="16dp"
         android:layout_below="@+id/editText4"
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Modo de preparo:"
+        android:text="@string/valorcompra"
         android:id="@+id/textView6"
         android:layout_marginTop="16dp"
         android:layout_below="@+id/editText5"
@@ -66,13 +66,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView6" />
+        android:layout_below="@+id/textView6"
+        android:inputType="number" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Quantidade de pessoas:"
+        android:text="@string/obs"
         android:id="@+id/textView7"
         android:layout_marginTop="16dp"
         android:layout_below="@+id/editText6"
@@ -88,30 +89,11 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView7" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Tempo de Preparo:"
-        android:id="@+id/textView8"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/editText7"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textView8" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alterar"
+        android:text="@string/alterar"
         android:id="@+id/button2"
         android:layout_above="@+id/button3"
         android:layout_alignParentStart="true"
@@ -120,7 +102,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deletar"
+        android:text="@string/deletar"
         android:id="@+id/button3"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

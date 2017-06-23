@@ -20,19 +20,17 @@ public class InsereActivity extends Activity {
             @Override
             public void onClick(View v) {
                 BancoController crud = new BancoController(getBaseContext());
-                EditText Receitas = (EditText)findViewById(R.id.editText);
-                EditText Ingredientes = (EditText)findViewById((R.id.editText2));
-                EditText Mododepreparo = (EditText)findViewById(R.id.editText3);
-                EditText Quantpessoas = (EditText)findViewById(R.id.editText4);
-                EditText Tempo = (EditText)findViewById((R.id.editText5));
-                String ReceitasString = Receitas.getText().toString();
-                String IngredientesString = Ingredientes.getText().toString();
-                String MododepreparoString = Mododepreparo.getText().toString();
-                String QuantpessoasString = Quantpessoas.getText().toString();
-                String TempoString = Tempo.getText().toString();
+                EditText Titulolista = (EditText)findViewById(R.id.editText);
+                EditText Itens = (EditText)findViewById((R.id.editText2));
+                EditText Quantgastar = (EditText)findViewById(R.id.editText3);
+                EditText Observacoes = (EditText)findViewById(R.id.editText4);
+                String TitulolistaString = Titulolista.getText().toString();
+                String ItensString = Itens.getText().toString();
+                String QuantgastarString = Quantgastar.getText().toString();
+                String ObservacoesString = Observacoes.getText().toString();
                 String resultado;
 
-                resultado = crud.insereDado(ReceitasString,IngredientesString,MododepreparoString,QuantpessoasString,TempoString);
+                resultado = crud.insereDado(TitulolistaString,ItensString,QuantgastarString,ObservacoesString);
 
                 Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
             }

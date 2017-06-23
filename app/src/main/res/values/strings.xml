@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Receitas</string>
+    <string name="app_name">Remember</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="titulolista">Titulo da Lista:</string>
+    <string name="itens">Itens:</string>
+    <string name="valorcompra">Valor da Compra:</string>
+    <string name="obs">Observações:</string>
+    <string name="cadlista">CADASTRAR</string>
+    <string name="alterar">Alterar</string>
+    <string name="deletar">Deletar</string>
+    <string name="novalista">Nova Listas</string>
+    <string name="listas">Listas</string>
+    <string name="btLog">Entrar</string>
+    <string name="btRe">Cadastrar</string>
+    <string name="titulo">TITULO</string>
+    <string name="nome">Nome</string>
 </resources>

@@ -10,11 +10,10 @@ import android.widget.EditText;
 
 public class AlterarActivity extends Activity {
 
-    EditText Receitas;
-    EditText Ingredientes;
-    EditText Mododepreparo;
-    EditText Quantpessoas;
-    EditText Tempo;
+    EditText Titulolista;
+    EditText Itens;
+    EditText Quantgastar;
+    EditText Observacoes;
     Button alterar;
     Button deletar;
     Cursor cursor;
@@ -30,26 +29,24 @@ public class AlterarActivity extends Activity {
 
         crud = new BancoController(getBaseContext());
 
-        Receitas = (EditText)findViewById(R.id.editText4);
-        Ingredientes = (EditText)findViewById(R.id.editText5);
-        Mododepreparo = (EditText)findViewById(R.id.editText6);
-        Quantpessoas = (EditText)findViewById(R.id.editText7);
-        Tempo = (EditText)findViewById(R.id.editText8);
+        Titulolista = (EditText)findViewById(R.id.editText4);
+        Itens = (EditText)findViewById(R.id.editText5);
+        Quantgastar = (EditText)findViewById(R.id.editText6);
+        Observacoes = (EditText)findViewById(R.id.editText7);
 
         alterar = (Button)findViewById(R.id.button2);
 
         cursor = crud.carregaDadoById(Integer.parseInt(codigo));
-        Receitas.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.RECEITAS)));
-        Ingredientes.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.INGREDIENTES)));
-        Mododepreparo.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.MODODEPREPARO)));
-        Quantpessoas.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.QUANTPESSOAS)));
-        Tempo.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.TEMPO)));
+        Titulolista.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.TITULOLISTA)));
+        Itens.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.ITENS)));
+        Quantgastar.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.QUANTGASTAR)));
+        Observacoes.setText(cursor.getString(cursor.getColumnIndexOrThrow(CriaBanco.OBSERVACOES)));
 
         alterar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                crud.alteraRegistro(Integer.parseInt(codigo), Receitas.getText().toString(),Ingredientes.getText().toString(),
-                        Mododepreparo.getText().toString(),Quantpessoas.getText().toString(),Tempo.getText().toString());
+                crud.alteraRegistro(Integer.parseInt(codigo), Titulolista.getText().toString(),Itens.getText().toString(),
+                        Quantgastar.getText().toString(),Observacoes.getText().toString());
                 Intent intent = new Intent(AlterarActivity.this,ConsultaActivity.class);
                 startActivity(intent);
                 finish();
